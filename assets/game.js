@@ -11,9 +11,15 @@ var Game = {
   init: function () {
     console.log("WSRL Live Initialization");
     this.DISPLAYS.main.o = new ROT.Display({width:this.DISPLAYS.main.w, height:this.DISPLAYS.main.h});
+    this.renderMain();
   },
   getDisplay: function(displayName) {
     return this.DISPLAYS[displayName].o;
+  },
+  renderMain: function() {
+    for (var i = 0; i < 5; i++) {
+      this.DISPLAYS.main.o.drawText(2,3+i,"TADA!!!");
+    }
   }
 };
 
