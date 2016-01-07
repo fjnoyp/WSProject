@@ -1,0 +1,7 @@
+git status
+Create new branch: git branch dev
+Checkout branch: git checkout deb
+
+git add .
+git commit -m "stuff"
+git push origin master
